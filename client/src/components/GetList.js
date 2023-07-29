@@ -9,7 +9,7 @@ function GetList() {
 
     let getList = async () => {
 
-        let response = await axios.get("http://localhost:6677/connect");
+        let response = await axios.get("/connect");
         console.log(response);
         console.log(response.data);
         setUserList(response.data);
