@@ -7,11 +7,14 @@ const path = require("path");
 app.use(cors());
 // express.static in here or handleUser file??
 app.use("/uploads", express.static("uploads"));
+app.use("/routes", express.static("routes"));
+
 // 2. join module & dirname
 app.use(express.static(path.join(__dirname, "./client/build")));
 
 const handleUser = require("./routes/HandleUser");
 app.use("/", handleUser);
+
 
 
 // let authoriseToken = (req, res, next) => {
