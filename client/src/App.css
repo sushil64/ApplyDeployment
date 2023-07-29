@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+}
+#homeimg{
+  width: 400px;
+  height: 400px;
+  border-radius: 15px;
+}
+table{
+  background-color: rgb(175, 167, 156);
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table,
+th,
+td {
+  border: 1px solid gray;
+}
+
+#tableimg{
+  height: 100px;
+  width: 100px;
+}
+button{
+  background-color: palevioletred;
+}
