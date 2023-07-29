@@ -8,7 +8,7 @@ function GetList() {
     let [userList, setUserList] = useState([]);
 
     let getList = async () => {
-
+        // http://localhost:6677
         let response = await axios.get("/connect");
         console.log(response);
         console.log(response.data);
