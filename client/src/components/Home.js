@@ -13,7 +13,7 @@ function Home() {
     let [profilePic, setProfilePic] = useState("/images/boy.jpeg");
 
     let getData = async () => {
-        // http://localhost:6677
+        // http://localhost:6677  <- no need of base url
         let response = await axios.get("/connect");
         console.log(response);
     };
